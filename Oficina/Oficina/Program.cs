@@ -1,9 +1,10 @@
 ﻿using System;
+
 namespace Oficina
 {
-    class Program
-   {
-    public static void main(string[] args)
+     class Program
+    {
+        static void Main(string[] args)
         {
             Carro C = new Carro("fiat", "argo", 2023, true, 162, "metalico");
 
@@ -11,5 +12,5 @@ namespace Oficina
 
 
         }
-   }
+    }
 }

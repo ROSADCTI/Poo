@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Oficina
 {
-    internal class Pneu
+    public class Pneu
     {
     }
 }

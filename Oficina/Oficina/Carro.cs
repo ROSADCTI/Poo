@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Data.SqlTypes;
-
-
 namespace Oficina
 {
     public class Carro
@@ -72,13 +69,17 @@ namespace Oficina
 
         public void status()
         {
-            Console.WriteLine("\n fabricante" + this.cor);
+            Console.WriteLine(" \n **** CARRO *****");   
+            Console.WriteLine("\n fabricante " + this.cor);
             Console.WriteLine("\n modelo: " + this.modelo);
-            Console.WriteLine("\n  ano;" + this.ano);
-            Console.WriteLine("\n motorligado:" + motorligado);
-            Console.WriteLine("\n velocidade:" + velocidade + "Km");
-            Console.WriteLine("\n cor:" + this.cor);
+            Console.WriteLine("\n  ano; " + this.ano);
+            Console.WriteLine("\n motorligado: " + motorligado);
+            Console.WriteLine("\n velocidade: " + velocidade + "Km");
+            Console.WriteLine("\n cor: " + this.cor);
         }
+
+
+
 
  }  }
 
