@@ -1,1 +1,1 @@
-<"[https://www.tse.jus.br/imagens/fotos/urna-eletronica-30-09-2020-1601508698473/@@images/03265c46-cd35-449d-acad-0f2b8810fb3d.jpeg](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Vs7SW-9C40uMXGxJ_-ZFv9_EURonZU_Lbg&usqp=CAU)" height="40" width="90"/>
+<"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Vs7SW-9C40uMXGxJ_-ZFv9_EURonZU_Lbg&usqp=CAU" height="40" width="90"/>
