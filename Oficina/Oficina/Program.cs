@@ -6,9 +6,10 @@ namespace Oficina
     {
         static void Main(string[] args)
         {
-            Carro C = new Carro("fiat", "argo", 2023, true, 162, "metalico");
+            Carro C = new Carro("fiat", "Argo S", 2023, true, 162, "metalico");
 
             C.status();
+            C.sistuacaoMotor();
 
 
         }

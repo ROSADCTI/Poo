@@ -9,6 +9,19 @@ namespace Oficina
         private bool motorligado;
         private int velocidade;
         private string cor;
+
+        public String sistuacaoMotor()
+        {
+            if (motorligado)
+            {
+                return this.modelo + " --> motor ligado.";
+            }
+            else
+            {
+                return this.modelo + " --> motor desligado.";
+            }
+            
+        }
         public Carro(string fabricante, string modelo, int ano, bool motorLigado, int velocidade, string cor)
         {
             this.fabricante = fabricante;
@@ -69,13 +82,13 @@ namespace Oficina
 
         public void status()
         {
-            Console.WriteLine(" \n **** CARRO *****");   
+            Console.WriteLine(" \n **** CARRO ***** ");   
             Console.WriteLine("\n fabricante " + this.cor);
             Console.WriteLine("\n modelo: " + this.modelo);
-            Console.WriteLine("\n  ano; " + this.ano);
+            Console.WriteLine("\n ano; " + this.ano);
             Console.WriteLine("\n motorligado: " + motorligado);
             Console.WriteLine("\n velocidade: " + velocidade + "Km");
-            Console.WriteLine("\n cor: " + this.cor);
+            Console.WriteLine("\n cor: " + this.cor  + "\n ");
         }
 
 
