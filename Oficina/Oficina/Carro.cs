@@ -9,19 +9,7 @@ namespace Oficina
         private bool motorligado;
         private int velocidade;
         private string cor;
-
-        public String sistuacaoMotor()
-        {
-            if (motorligado)
-            {
-                return this.modelo + " --> motor ligado.";
-            }
-            else
-            {
-                return this.modelo + " --> motor desligado.";
-            }
-            
-        }
+        
         public Carro(string fabricante, string modelo, int ano, bool motorLigado, int velocidade, string cor)
         {
             this.fabricante = fabricante;
@@ -31,6 +19,9 @@ namespace Oficina
             this.velocidade = velocidade;
             this.cor = cor;
         }
+
+
+
         public string getfabricante()
         {
             return this.fabricante;
@@ -80,6 +71,51 @@ namespace Oficina
             this.cor = cor;
         }
 
+
+
+        public string sistuacaoMotor()
+        {
+            if (this.motorligado )
+            {
+                return  " Motor do " + this.modelo + " -->  motor ligado.";
+            }
+            else
+            {
+                return " * Motor do " + this.modelo + " -->   motor desligado.";
+            }
+            
+        }
+         public string ligarMotor()
+         {
+            if (this.motorligado)
+            {
+                return "\n * Motor do " + this.modelo + " -->  já estava ligado.";
+                
+            }
+            else
+            {
+                return "\n * Motor do " + this.modelo + " -->  foi ligado.";
+            }
+         }
+        public string DesligarMotor()
+        // se motor do carro estive Desligado (falser)
+        {
+            if (this.motorligado) ;
+            return "\n * Motor do " + this.modelo + " --> já estava desligado.";
+
+            // verificando velocidade   se carro é Zero
+             if (this.velocidade == 0)
+            {
+                // motor desligado
+                this.motorligado = false;
+                return " O motor do " + this.modelo + " --> foi desligado.";
+            }
+            else
+            {
+                return "O motor do" + this.modelo + " --> não foi desligado, pois o carro esta em movimento.";
+            }
+
+        }  
         public void status()
         {
             Console.WriteLine(" \n **** CARRO ***** ");   
@@ -90,10 +126,6 @@ namespace Oficina
             Console.WriteLine("\n velocidade: " + velocidade + "Km");
             Console.WriteLine("\n cor: " + this.cor  + "\n ");
         }
-
-
-
-
  }  }
 
 
