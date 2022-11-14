@@ -160,8 +160,7 @@ namespace Oficina
             }
                 
         }
-        
-
+   
         public void status()
         {
             Console.WriteLine(" \n **** CARRO ***** ");   
