@@ -143,7 +143,7 @@ namespace Oficina
             
             if(this.velocidade == 0)
             {
-                return " \n * " + this.modelo + " --> O carro já esta parado! \n\n\n";
+                return " \n * " + this.modelo + " --> O carro já esta parado! \n\n";
             }         
                          // Agora ver se motor está LIGADO e a velocida é DIFERENTE DE ZERO.
                       //  Redução de velocidade daria o valor negativo.
@@ -164,7 +164,7 @@ namespace Oficina
         public void status()
         {
             Console.WriteLine(" \n **** CARRO ***** ");   
-            Console.WriteLine("\n fabricante " + this.cor);
+            Console.WriteLine("\n fabricante " + this.fabricante);
             Console.WriteLine("\n modelo: " + this.modelo);
             Console.WriteLine("\n ano; " + this.ano);
             Console.WriteLine("\n motorligado: " + motorligado);

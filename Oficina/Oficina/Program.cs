@@ -7,6 +7,7 @@ namespace Oficina
         static void Main(string[] args)
         {
             Carro C = new Carro("fiat", "Argo ", 2023, true, 30, "metalico");
+            Pneu p = new Pneu( 14, " Goodyear");
 
             C.status();
            
@@ -23,6 +24,10 @@ namespace Oficina
             Console.WriteLine(C.frear(80));
             Console.WriteLine(C.frear(60));
             Console.WriteLine(C.frear(15));
+           
+            p.exibir();   //Pneu.
+
+            
 
 
 
